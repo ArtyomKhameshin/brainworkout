@@ -18,6 +18,11 @@ public class Main {
             throw new RuntimeException(e);
         }
 
+        Scanner cmdToStart = new Scanner(System.in);
+        String key = cmdToStart.next();
+        // обработка ввода для вывода подсказки или перехода к вычислениям
+
+
 
 
     }

@@ -1,6 +1,0 @@
-Hello!
-This program can make a few simple
-calculations for you!
-This text contains instructions
-and the list of functions of
-this program! Thanks for using it!

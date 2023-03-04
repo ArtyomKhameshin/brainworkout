@@ -1,0 +1,5 @@
+Hello!
+This program can make a few simple
+calculations for you!
+press 'h' to show instructions,
+press 'c' to skip instructions and continue.
