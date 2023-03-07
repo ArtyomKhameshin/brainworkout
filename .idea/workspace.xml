@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1729c8f0-5044-41f4-84cf-b56b026a540b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Represent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Represent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Represent.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,14 @@
       <recent name="C:\Users\79807\IdeaProjects\Calc" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Calculations">
+    <configuration name="Calculations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Calculations" />
+      <module name="Calc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Calc" />
@@ -53,6 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Calculations" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
