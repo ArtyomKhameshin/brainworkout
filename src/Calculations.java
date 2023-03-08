@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Calculations {
@@ -14,6 +13,7 @@ public class Calculations {
         process();
 
 
+
     }
 
     public static void process() {
@@ -22,6 +22,7 @@ public class Calculations {
         char operator = getOperator();
         int result = Calculations.calculator(a, b, operator);
         System.out.println("the result is   " + result);
+        toDoOrNot();
         process();
     }
 
@@ -105,12 +106,12 @@ public class Calculations {
         System.out.println("Do you want to continue?");
         String answer = scanner.next();
         switch (answer) {
-            case "y", "Y", "н", "Н" :
-                System.out.println();
-                break;
-            case "n", "N", "т", "Т" :
-                return;
-            default: toDoOrNot();
+            case "y", "Y", "н", "Н" -> System.out.println();
+            case "n", "N", "т", "Т" -> {
+                exit();
+                System.exit(666);
+            }
+            default -> toDoOrNot();
         }
     }
 
@@ -118,6 +119,9 @@ public class Calculations {
         System.out.println("====================");
     }
 
+    public static void exit() {
+        System.out.println("Bye");
+    }
 
 
 }
