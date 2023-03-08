@@ -11,9 +11,6 @@ public class Calculations {
         frame();
         representStart();
         process();
-
-
-
     }
 
     public static void process() {
@@ -51,7 +48,6 @@ public class Calculations {
     }
 
     public static int calculator(int a, int b, char operator) {
-
         switch(operator) {
             case '+': return a+b;
             case '-': return a-b;
@@ -81,16 +77,15 @@ public class Calculations {
     public static void representStart() {
         String key = scanner.next();
         switch (key) {
-            case "h" -> {
+            case "h", "H", "р", "Р" -> {
                 File help = new File("instructions.txt");
                 representTextFromFile(help);
                 frame();
                 toDoOrNot();
                 System.out.println("Ok, make your calculations below:");
                 frame();
-
             }
-            case "c" -> {
+            case "c", "C", "с", "С" -> {
                 System.out.println("Ok, make your calculations below:");
                 frame();
             }
@@ -99,7 +94,6 @@ public class Calculations {
                 representStart();
             }
         }
-
     }
 
     public static void toDoOrNot () {
@@ -122,8 +116,6 @@ public class Calculations {
     public static void exit() {
         System.out.println("Bye");
     }
-
-
 }
 
 
