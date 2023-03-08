@@ -1,1 +1,21 @@
-# there should be instructions here
+This app can make a simple math operations with your numbers.
+
+USE INTEGER NUMBERS ONLY, NO FLOATING POINTS
+USE ONLY 4 BASIC OPERATION SYMBOLS:  *, /, +, -
+but if you're a mother's hacker,
+there is a check into a program,
+which won't let you enter the wrong data
+
+navigation:
+use letters as commands to stop and continue,
+* register and eng/ru doesn't matter
+
+calculation:
+1) enter the number A (for example, you entered 10)
+2) enter the second number B (for example, you entered 5
+3) enter the operation symbol (for example, you entered /)
+4) the program will place your symbols the following order:
+    A divided by B is RESULT (10 / 5 = 2)
+5) then you'll see the result
+
+
