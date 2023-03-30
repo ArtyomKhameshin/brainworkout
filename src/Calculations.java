@@ -17,8 +17,8 @@ public class Calculations {
         int a = getNumber();
         int b = getNumber();
         char operator = getOperator();
-        int result = calculator(a, b, operator);
-        System.out.println("the result is   " + result);
+        String result = calculator(a, b, operator);
+        System.out.println("the result is " + result);
         toDoOrNot();
         process();
     }
@@ -45,15 +45,15 @@ public class Calculations {
         return result;
     }
 
-    public static int calculator(int a, int b, char operator) {
+    public static String calculator(int a, int b, char operator) {
         switch(operator) {
-            case '+': return a+b;
-            case '-': return a-b;
-            case '*': return a*b;
-            case '/': return a/b;
+            case '+': return String.valueOf(a + b);
+            case '-': return String.valueOf(a - b);
+            case '*': return String.valueOf(a * b);
+            case '/': return String.valueOf(a / b);
             default: {
                 System.out.println("Error! Wrong or non-existent operation!");
-                return 0;
+                return "not defined!";
             }
         }
     }
@@ -103,10 +103,8 @@ public class Calculations {
                 exit();
                 System.exit(0);
             }
-            default -> {
-                scanner.nextLine();
+            default ->
                 toDoOrNot();
-            }
         }
     }
 
