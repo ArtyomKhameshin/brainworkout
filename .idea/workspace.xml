@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1729c8f0-5044-41f4-84cf-b56b026a540b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Calculations">
+    <configuration name="BufFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BufFix" />
+      <module name="Calc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Calculations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Calculations" />
       <module name="Calc" />
@@ -60,6 +68,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Calculations" />
+        <item itemvalue="Application.BufFix" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

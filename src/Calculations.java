@@ -17,23 +17,21 @@ public class Calculations {
         int a = getNumber();
         int b = getNumber();
         char operator = getOperator();
-        int result = Calculations.calculator(a, b, operator);
+        int result = calculator(a, b, operator);
         System.out.println("the result is   " + result);
         toDoOrNot();
         process();
     }
 
     public static int getNumber () {
-        int result;
         System.out.println("Enter the number");
-
-            if (scanner.hasNextInt()) {
-                result = scanner.nextInt();
-            } else {
-                System.out.println("Integer required!");
-                result = getNumber();
-            }
-        return result;
+        try {
+            return scanner.nextInt();
+        } catch (Exception e) {
+            scanner.nextLine();
+            System.out.println("Integer required");
+            return getNumber();
+        }
     }
 
     public static char getOperator () {
@@ -54,7 +52,7 @@ public class Calculations {
             case '*': return a*b;
             case '/': return a/b;
             default: {
-                System.out.println("Error");
+                System.out.println("Error! Wrong or non-existent operation!");
                 return 0;
             }
         }
@@ -103,14 +101,17 @@ public class Calculations {
             case "y", "Y", "н", "Н" -> System.out.println();
             case "n", "N", "т", "Т" -> {
                 exit();
-                System.exit(666);
+                System.exit(0);
             }
-            default -> toDoOrNot();
+            default -> {
+                scanner.nextLine();
+                toDoOrNot();
+            }
         }
     }
 
     public static void frame () {
-        System.out.println("====================");
+        System.out.println("=====================================");
     }
 
     public static void exit() {
